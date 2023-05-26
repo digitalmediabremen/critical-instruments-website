@@ -1,0 +1,12 @@
+<header class="site-header" role="banner">
+
+  <div class="wrapper">
+    {%- assign default_paths = site.pages | map: "path" -%}
+    {%- assign page_paths = site.header_pages | default: default_paths -%}
+    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+	  <span class="site-title-sub">
+	  	an artistic-design research project exploring the making and using of musical instruments as a form of critical thinking and acting
+		  <!-- Music Making + Instrument Building as Mode of Art/Design Inquiry -->
+	  </span>
+  </div>
+</header>

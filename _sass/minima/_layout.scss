@@ -36,7 +36,7 @@ a:link {
 /* visited link */
 a:visited {
   color: $brand-color;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 /* mouse over link */
@@ -62,7 +62,7 @@ h1, h2, h3, h4, h5 {
 }
 
 h1, h2, h3, h4, h5 {
-  font-weight: 400;
+  font-weight: 700;
   margin-top: $base-line-height * $base-font-size;
   margin-bottom: $base-line-height * $base-font-size;
 }
@@ -294,9 +294,10 @@ sup {
  * Site footer
  */
 .site-footer {
-  border: 1px dashed $brand-color;
-  padding: $base-line-height * $base-font-size;
-  margin: $base-line-height * $base-font-size;
+//   border: 1px dashed $brand-color;
+//   padding: $base-line-height * $base-font-size;
+//   margin: $base-line-height * $base-font-size;
+    margin-bottom: 2 * $base-line-height * $base-font-size;
 }
 
 .footer-heading {
@@ -483,3 +484,19 @@ sup {
     height: 100%;
 }
 
+// cleaning up front page
+
+.post-list h1:before {
+    content: "";
+    margin-left: 0em;
+}
+
+.post-list li:before {
+  content: "";
+  position: absolute;
+}
+
+.home h1:before {
+    content: "";
+    margin-left: 0em;
+}
